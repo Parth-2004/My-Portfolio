@@ -1,0 +1,8 @@
+# Docs for you, not for visitors
+README.md
+MEDIA_PROMPTS.md
+
+# Never publish local secrets or Vercel link data
+.env*
+.vercel
+.gitignore

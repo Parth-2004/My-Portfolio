@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lost in the noise — Parth Shikarwar</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#060708">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23060708'/%3E%3Ctext x='13' y='47' font-family='Georgia,serif' font-style='italic' font-size='42' fill='%23ecebe6'%3EP%3C/text%3E%3Ccircle cx='47' cy='43' r='5' fill='%23d4ff3a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Geist+Mono:wght@400&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #060708; --ink: #ecebe6; --mute: #86878c; --accent: #d4ff3a; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: radial-gradient(70% 60% at 30% 10%, rgba(51, 38, 200, .35), transparent 70%),
+                radial-gradient(60% 60% at 85% 30%, rgba(10, 127, 120, .28), transparent 70%), var(--bg);
+    color: var(--ink); font: 300 16px/1.55 "Geist", system-ui, sans-serif;
+    display: grid; place-items: center; padding: 24px; text-align: center; -webkit-font-smoothing: antialiased;
+  }
+  .code { font: 500 12px/1 "Geist Mono", ui-monospace, monospace; letter-spacing: .12em; color: var(--mute); text-transform: uppercase; }
+  .code i { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); vertical-align: 1px; }
+  h1 { margin: 20px 0 14px; font: 500 clamp(44px, 9vw, 96px)/.95 "Geist", sans-serif; letter-spacing: -.045em; }
+  h1 em { font: italic 400 1.08em "Instrument Serif", serif; letter-spacing: -.01em; }
+  p { margin: 0 auto 32px; max-width: 38ch; color: rgba(236, 235, 230, .72); }
+  a { display: inline-flex; align-items: center; gap: 10px; height: 50px; padding: 0 24px; border-radius: 999px; background: var(--ink); color: #0a0a0a; font-weight: 500; text-decoration: none; transition: background .3s; }
+  a:hover { background: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <main>
+    <p class="code"><i></i>404 · Signal not found</p>
+    <h1>This page is <em>just noise.</em></h1>
+    <p>The link may be old or mistyped. Everything worth seeing is on the home page.</p>
+    <a href="/">Back to the portfolio →</a>
+  </main>
+</body>
+</html>
