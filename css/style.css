@@ -663,7 +663,7 @@ h1, h2, h3 { font-weight: 500; }
 /* ==========================================================================
    Reduced motion: final frames, no ambient motion
    ========================================================================== */
-/* html.rm is set in <head> when the OS asks for reduced motion (override with ?motion=full).
+/* html.rm (calm mode) is set in <head> only when the URL has ?motion=reduced; the site is fully animated otherwise.
    Ambient motion stops; effects driven directly by the pointer or scroll stay. */
 .rm [data-reveal], .rm [data-hero], .rm [data-split] .w > span, .rm .wordmark { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
 .rm .wordmark { filter: url(#glass) !important; }

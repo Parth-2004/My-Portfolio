@@ -25,14 +25,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <!-- bump ?v= on both links whenever you change the CSS/JS so returning visitors get the new files -->
-<link rel="stylesheet" href="css/style.css?v=2">
+<link rel="stylesheet" href="css/style.css?v=3">
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Parth Shikarwar","jobTitle":"Software & ML/AI Engineer","url":"https://parthshikarwar.vercel.app/","email":"mailto:parthshikarwar04@gmail.com","address":{"@type":"PostalAddress","addressLocality":"New Delhi","addressCountry":"IN"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Guru Gobind Singh Indraprastha University"},"sameAs":["https://github.com/Parth-2004","https://www.linkedin.com/in/parth-shikarwar-a940a7295/"],"knowsAbout":["Machine Learning","Retrieval-Augmented Generation","C++","FastAPI","Algorithmic Trading","Large Language Models"]}
 </script>
 <script>
-  /* "rm" = calm mode for visitors who ask their OS for reduced motion. Add ?motion=full to the URL to preview the full version anyway. */
-  (function (d) { d.classList.add('js'); try { if (matchMedia('(prefers-reduced-motion: reduce)').matches && !/[?&]motion=full/.test(location.search)) d.classList.add('rm'); } catch (e) {} })(document.documentElement);
+  /* Full animation is always on, whatever the OS motion setting. "rm" (calm mode) only switches on with ?motion=reduced in the URL. */
+  (function (d) { d.classList.add('js'); if (/[?&]motion=reduced/.test(location.search)) d.classList.add('rm'); })(document.documentElement);
 </script>
 </head>
 <body>
@@ -835,6 +835,6 @@
 <div class="toast mono" role="status" aria-live="polite"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-<script src="js/main.js?v=2" defer></script>
+<script src="js/main.js?v=3" defer></script>
 </body>
 </html>

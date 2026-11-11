@@ -2,7 +2,7 @@
    Parth Shikarwar — Portfolio runtime
    One rAF loop drives everything: smooth scroll, hero particles, card peel,
    timeline, halftone portrait, globe, cursor. Each module self-pauses when
-   off-screen and respects prefers-reduced-motion.
+   off-screen. Full motion is always on (calm mode only via ?motion=reduced).
    ========================================================================== */
 (() => {
   'use strict';
@@ -16,7 +16,7 @@
   const easeIO = t => (t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
   const easeOut = t => 1 - Math.pow(1 - t, 3);
   const root = document.documentElement;
-  const RM = root.classList.contains('rm'); // set in <head>; ?motion=full overrides the OS preference
+  const RM = root.classList.contains('rm'); // calm mode: only with ?motion=reduced (set in <head>); full motion otherwise
   if (RM) $$('svg').forEach(s => s.pauseAnimations && s.pauseAnimations());
   const FINE = matchMedia('(hover: hover) and (pointer: fine)').matches;
   const DESK = matchMedia('(min-width: 992px)');

@@ -44,7 +44,7 @@ python -m http.server 8137 --directory portfolio
 
 Then open http://localhost:8137. Opening `index.html` directly with `file://` also works, but a server is closer to production.
 
-> **Seeing no animations?** The site respects the operating system's *reduce motion* setting and shows a calm version to visitors who ask for it. On Windows that setting is **Settings → Accessibility → Visual effects → Animation effects**. To preview the full version regardless, add `?motion=full` to the URL, e.g. `http://localhost:8137/?motion=full`.
+> **Animations are always on**, even when a visitor's operating system has *reduce motion* / *Animation effects* turned off. A calm version (no ambient motion) still exists for testing: add `?motion=reduced` to the URL, e.g. `http://localhost:8137/?motion=reduced`.
 
 ## Deploy to Vercel
 
